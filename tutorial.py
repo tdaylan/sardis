@@ -1,2 +1,2 @@
 import sardis
-
+sardis.init()

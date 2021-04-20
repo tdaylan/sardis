@@ -209,3 +209,7 @@ def plot_report(star, planet, imageData):
     plot_text(axText, star, planet, 0.15, 0.035, 0.95, 8)
     # Save figure
     plt.savefig('tic%i/report.png' % (star['id']),dpi=150)
+
+
+
+

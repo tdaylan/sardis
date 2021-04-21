@@ -7,6 +7,11 @@ from brokenaxes import brokenaxes
 from scipy.stats import binned_statistic
 from tessDiffImage import draw_pix_catalog
 
+def init():
+    
+    pass
+
+
 def plot_vs_phase(ax, time, flux, epo, per, dur, sigma, fs, ms, scale=24, phs=0, nbins=30, frac=0.5, colour='0.7', closeup=True):
     phase_time, phase_flux = phase_diagram(time, flux, epo + per*phs, per, frac)
     phase_time *= scale

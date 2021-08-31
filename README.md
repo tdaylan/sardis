@@ -1,5 +1,5 @@
 # sardis
 
 ## Introduction
-Pipeline to vet exoplanet candidates
+sardis is a pipeline to vet exoplanet candidates
 

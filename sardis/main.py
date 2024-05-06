@@ -25,7 +25,6 @@ def init(
    
     print('sardis initialized at %s...' % gdat.strgtimestmp)
     
-
     path = os.environ['SARDIS_DATA_PATH'] + '/data/'
     
     #listtoiitarg = np.loadtxt(path)
@@ -37,6 +36,8 @@ def init(
     if gdat.dicttroiinpt is None:
         gdat.dicttroiinpt = dict()
         gdat.dicttroiinpt['typesyst'] = 'PlanetarySystem'
+        gdat.dicttroiinpt['listlablinst'] = [['TESS'], []]
+    
     troia.init( \
                **gdat.dicttroiinpt, \
                #listtoiitarg=listtoiitarg, \

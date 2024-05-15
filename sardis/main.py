@@ -62,10 +62,10 @@ def init(
     #dictmileinptglob['dictboxsperiinpt'] = dict()
     #dictmileinptglob['dictboxsperiinpt']['factosam'] = 0.1
     
-    gdat.typesimu = 'Synthetic'
+    gdat.typepoplsimu = 'Synthetic'
 
     # select targets
-    if gdat.typesimu != 'Synthetic':
+    if gdat.typepoplsimu == 'TIC_m060':
         dictpopltici = nicomedia.retr_dictpopltic8(typepopl='TIC_m060')
         listtici = dictpopltici['TIC']
     
@@ -74,7 +74,7 @@ def init(
         gdat.dicttroiinpt['pathbase'] = gdat.pathsimu
         gdat.dicttroiinpt['typesyst'] = gdat.typesyst
         gdat.dicttroiinpt['listlablinst'] = [['TESS'], []]
-        if gdat.typesimu == 'Synthetic':
+        if gdat.typepoplsimu == 'Synthetic':
             gdat.dicttroiinpt['liststrgtypedata'] = [['simutargsynt'], []]
         else:
             gdat.dicttroiinpt['liststrgtypedata'] = [['simutargpartinje'], []]
@@ -87,6 +87,5 @@ def init(
                #typepopl='prev', \
               )
 
-    
     troia.init()
 
